@@ -1,0 +1,181 @@
+{
+ "actions": [],
+ "creation": "2021-09-21 10:03:03.334757",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "pawn_type",
+  "date_loan_granted",
+  "maturity_date",
+  "expiry_date",
+  "column_break_4",
+  "status",
+  "company",
+  "cost_center",
+  "customer_tracker_no",
+  "customers_full_name",
+  "notes",
+  "section_break_8",
+  "pawn_ticket_items",
+  "section_break_10",
+  "desired_principal",
+  "interest",
+  "net_proceeds",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "pawn_type",
+   "fieldtype": "Select",
+   "label": "Pawn Type",
+   "options": "Gadget\nJewelry"
+  },
+  {
+   "fieldname": "date_loan_granted",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date Loan Granted",
+   "reqd": 1
+  },
+  {
+   "fieldname": "maturity_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Maturity Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "expiry_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Expiry Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Pending",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "no_copy": 1,
+   "options": "Pending\nInitial Appraisal\nApproved",
+   "read_only": 1
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "cost_center",
+   "fieldtype": "Link",
+   "label": "Cost Center",
+   "options": "Cost Center"
+  },
+  {
+   "fetch_from": "customer.naming_series",
+   "fieldname": "customer_tracker_no",
+   "fieldtype": "Link",
+   "label": "Customer Tracker No",
+   "options": "Customer",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "customer_tracker_no.customer_name",
+   "fieldname": "customers_full_name",
+   "fieldtype": "Data",
+   "label": "Customer Full Name"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "pawn_ticket_items",
+   "fieldtype": "Table",
+   "label": "Pawn Ticket Items",
+   "options": "Pawn Ticket Item"
+  },
+  {
+   "fieldname": "section_break_10",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "desired_principal",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Principal",
+   "options": "Company:company:default_currency",
+   "reqd": 1
+  },
+  {
+   "fieldname": "interest",
+   "fieldtype": "Percent",
+   "label": "Interest",
+   "options": "Company:company:default_currency",
+   "reqd": 1
+  },
+  {
+   "fieldname": "net_proceeds",
+   "fieldtype": "Currency",
+   "label": "Net Proceeds",
+   "options": "Company:company:default_currency",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Pawn Ticket",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Pawn Ticket",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2021-10-26 11:27:24.315485",
+ "modified_by": "Administrator",
+ "module": "Pawnshop Management",
+ "name": "Pawn Ticket",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

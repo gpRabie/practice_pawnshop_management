@@ -1,0 +1,162 @@
+{
+ "actions": [],
+ "autoname": "field:pawn_ticket",
+ "creation": "2021-10-22 17:10:02.005612",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "pawn_ticket",
+  "item_series",
+  "pawn_type",
+  "date_loan_granted",
+  "maturity_date",
+  "expiry_date",
+  "column_break_5",
+  "status",
+  "customers_tracker_no",
+  "customers_full_name",
+  "section_break_9",
+  "inventory_no",
+  "pawn_items",
+  "section_break_11",
+  "principal",
+  "interest",
+  "net_proceeds",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "date_loan_granted",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date Loan Granted"
+  },
+  {
+   "fieldname": "maturity_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Maturity Date"
+  },
+  {
+   "fieldname": "expiry_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Expiry Date"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Pending\nInitial Appraisal\nApproved"
+  },
+  {
+   "fetch_from": "customers_tracker_no.customer_name",
+   "fieldname": "customers_full_name",
+   "fieldtype": "Data",
+   "label": "Customer's Full Name"
+  },
+  {
+   "fieldname": "section_break_9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "pawn_items",
+   "fieldtype": "Table",
+   "label": "Pawn Item(s)",
+   "options": "Pawn Ticket Item"
+  },
+  {
+   "fieldname": "section_break_11",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "principal",
+   "fieldtype": "Currency",
+   "label": "Principal",
+   "options": "Company:company:default_currency"
+  },
+  {
+   "fieldname": "interest",
+   "fieldtype": "Currency",
+   "label": "Interest",
+   "options": "Company:company:default_currency"
+  },
+  {
+   "fieldname": "net_proceeds",
+   "fieldtype": "Currency",
+   "label": "Net Proceeds",
+   "options": "Company:company:default_currency"
+  },
+  {
+   "fieldname": "pawn_type",
+   "fieldtype": "Select",
+   "label": "Pawn Type",
+   "options": "Jewelry\nNon Jewelry"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Sangla",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "customers_tracker_no",
+   "fieldtype": "Link",
+   "label": "Customer's Tracker No.",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "item_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "A\nB",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "pawn_ticket",
+   "fieldtype": "Data",
+   "label": "Pawn Ticket ",
+   "read_only": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "inventory_no",
+   "fieldtype": "Data",
+   "label": "Inventory No"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2021-10-29 13:50:05.063116",
+ "modified_by": "Administrator",
+ "module": "Pawnshop Management",
+ "name": "Sangla",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

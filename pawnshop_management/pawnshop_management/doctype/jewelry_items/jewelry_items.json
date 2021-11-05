@@ -1,0 +1,131 @@
+{
+ "actions": [],
+ "creation": "2021-11-03 09:59:29.800067",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item_no",
+  "new_transaction",
+  "branch",
+  "type",
+  "karat",
+  "karat_category",
+  "color",
+  "weight_g",
+  "column_break_6",
+  "additional_for_stone",
+  "colors_if_multi",
+  "section_break_10",
+  "appraisal_value",
+  "section_break_12",
+  "comments"
+ ],
+ "fields": [
+  {
+   "fieldname": "item_no",
+   "fieldtype": "Data",
+   "label": "Item No",
+   "unique": 1
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "label": "Type",
+   "options": "Earrings\nBracelet\nNecklace\nRing\nBangles\nPendant\nEarcuff\nGold Coin"
+  },
+  {
+   "fieldname": "weight_g",
+   "fieldtype": "Float",
+   "label": "Weight (g)"
+  },
+  {
+   "fieldname": "karat",
+   "fieldtype": "Select",
+   "label": "Karat",
+   "options": "10KT\n14KTC\n14KT\n18KTC\n18KT\n21KT\n22KT\n23KT\n24KT(Bars and Coins)"
+  },
+  {
+   "fieldname": "karat_category",
+   "fieldtype": "Select",
+   "label": "Karat Category",
+   "options": "Defective\nRegular\nSagad\n3.4g and Below"
+  },
+  {
+   "fieldname": "additional_for_stone",
+   "fieldtype": "Small Text",
+   "label": "Additional for Stone"
+  },
+  {
+   "fieldname": "color",
+   "fieldtype": "Select",
+   "label": "Color",
+   "options": "Yellow Gold\nWhite Gold\nRose Gold\nMulti Colored"
+  },
+  {
+   "fieldname": "colors_if_multi",
+   "fieldtype": "Small Text",
+   "label": "Colors (if multi)"
+  },
+  {
+   "fieldname": "comments",
+   "fieldtype": "Small Text",
+   "label": "Comments"
+  },
+  {
+   "fieldname": "appraisal_value",
+   "fieldtype": "Currency",
+   "label": "Appraisal Value"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_10",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_12",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "label": "Branch",
+   "options": "Branch"
+  },
+  {
+   "default": "0",
+   "fieldname": "new_transaction",
+   "fieldtype": "Check",
+   "label": "New Transaction"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-11-03 18:04:22.713630",
+ "modified_by": "Administrator",
+ "module": "Pawnshop Management",
+ "name": "Jewelry Items",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "item_no",
+ "track_changes": 1
+}

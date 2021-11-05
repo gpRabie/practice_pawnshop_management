@@ -1,0 +1,91 @@
+{
+ "actions": [],
+ "creation": "2021-11-05 12:07:02.629434",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "a_series_current_count",
+  "b_series_current_count",
+  "column_break_3",
+  "jewelry_inventory_count",
+  "non_jewelry_inventory_count",
+  "column_break_6",
+  "jewelry_count",
+  "non_jewelry_count"
+ ],
+ "fields": [
+  {
+   "fieldname": "a_series_current_count",
+   "fieldtype": "Int",
+   "label": "A Series Current Count"
+  },
+  {
+   "fieldname": "b_series_current_count",
+   "fieldtype": "Int",
+   "label": "B Series Current Count "
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "jewelry_inventory_count",
+   "fieldtype": "Int",
+   "label": "Jewelry Inventory Count"
+  },
+  {
+   "fieldname": "non_jewelry_inventory_count",
+   "fieldtype": "Int",
+   "label": "Non Jewelry Inventory Count"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "jewelry_count",
+   "fieldtype": "Int",
+   "label": "Jewelry Count"
+  },
+  {
+   "fieldname": "non_jewelry_count",
+   "fieldtype": "Int",
+   "label": "Non Jewelry Count"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2021-11-05 12:14:49.117513",
+ "modified_by": "Administrator",
+ "module": "Pawnshop Management",
+ "name": "Sangla Count Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "Administrator",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

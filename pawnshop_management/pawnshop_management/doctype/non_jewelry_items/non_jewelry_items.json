@@ -1,0 +1,91 @@
+{
+ "actions": [],
+ "creation": "2021-11-03 14:04:37.739824",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item_no",
+  "branch",
+  "type",
+  "brand",
+  "column_break_4",
+  "category",
+  "appraisal_value",
+  "section_break_7",
+  "comments"
+ ],
+ "fields": [
+  {
+   "fieldname": "item_no",
+   "fieldtype": "Data",
+   "label": "Item No"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "label": "Type",
+   "options": "Cellphone\nTablet\nLaptop\nCamera"
+  },
+  {
+   "fieldname": "brand",
+   "fieldtype": "Select",
+   "label": "Brand",
+   "options": "--Please Select Type--"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "category",
+   "fieldtype": "Select",
+   "label": "Category",
+   "options": "Defective\nMinimum\nMaximum"
+  },
+  {
+   "fieldname": "appraisal_value",
+   "fieldtype": "Data",
+   "label": "Appraisal Value"
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "comments",
+   "fieldtype": "Small Text",
+   "label": "Comments"
+  },
+  {
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "label": "Branch",
+   "options": "Branch"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-11-03 17:06:10.201785",
+ "modified_by": "Administrator",
+ "module": "Pawnshop Management",
+ "name": "Non Jewelry Items",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
