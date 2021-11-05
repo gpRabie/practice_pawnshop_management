@@ -48,7 +48,7 @@ function show_pawn_ticket(frm){
 	frappe.call({
 		method: 'frappe.client.get_value',
 		args: {
-			'doctype': 'Sangla Count',
+			'doctype': 'Sangla Count Settings',
 			'fieldname': [
 				'a_series_current_count',
 				'b_series_current_count'
