@@ -1,6 +1,6 @@
 ## Pawnshop Management
 
-Pawnshop System
+Prototype of Pawnshop Management System
 
 #### License
 
